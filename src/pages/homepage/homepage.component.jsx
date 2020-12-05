@@ -4,7 +4,7 @@ import "./homepage.styles.scss";
 
 const HomePage = () => (
   <div className="homepage">
-    <h1>THIS IS THE HOMEPAGE</h1>
+    <div className="cover-image"></div>
   </div>
 );
 
