@@ -21,6 +21,9 @@ const Header = () => (
       <Link className="option" to="/blog">
         BLOG
       </Link>
+      <Link className="option" to="/signin">
+        SIGN IN
+      </Link>
     </div>
   </div>
 );
