@@ -1,4 +1,4 @@
-import React, { useReducer, useRef } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils'
@@ -8,6 +8,7 @@ import HomePage from "../src/pages/homepage/homepage.component";
 import ExplorePage from "../src/pages/explore/explore.component";
 import BlogPage from "../src/pages/blog/blog.component";
 import SignInPage from "../src/pages/sign-in/sign-in.component";
+import SignUpPage from "../src/pages/sign-up/sign-up.component";
 import Header from "../src/components/header/header.component";
 import Footer from "../src/components/footer/footer.component";
 import "./App.css";
@@ -59,6 +60,7 @@ class App extends React.Component {
           <Route path="/explore" component={ExplorePage} />
           <Route path="/blog" component={BlogPage} />
           <Route path="/signin" component={SignInPage} />
+          <Route path="/signup" component={SignUpPage} />
         </Switch>
         <Footer />
       </div>
