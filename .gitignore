@@ -33,7 +33,6 @@ node_modules
 bower_components
 
 *.sublime*
-
 psd
 thumb
 sketch
