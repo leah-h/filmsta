@@ -9,6 +9,7 @@ import ExplorePage from "../src/pages/explore/explore.component";
 import BlogPage from "../src/pages/blog/blog.component";
 import SignInPage from "../src/pages/sign-in/sign-in.component";
 import SignUpPage from "../src/pages/sign-up/sign-up.component";
+import UserPage from "../src/pages/user/user.component";
 import Header from "../src/components/header/header.component";
 import Footer from "../src/components/footer/footer.component";
 import "./App.css";
@@ -61,6 +62,7 @@ class App extends React.Component {
           <Route path="/blog" component={BlogPage} />
           <Route path="/signin" component={SignInPage} />
           <Route path="/signup" component={SignUpPage} />
+          <Route path="/user" component={UserPage} />
         </Switch>
         <Footer />
       </div>
