@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 
+import EditPost from "../edit-post/edit-post.component"
+
 const ListPosts = () => {
 
     const [posts, setPosts] = useState([]);
@@ -40,7 +42,7 @@ const ListPosts = () => {
         {posts.map(post => (
            <div key={post.post_id}>
             <p>{post.description}</p>
-                <button>Edit</button>
+                <EditPost post={post} />
                 <button onClick={() => deletePost(post.post_id)}>Delete</button>
             </div>
             ))
